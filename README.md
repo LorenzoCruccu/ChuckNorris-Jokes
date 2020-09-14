@@ -1,4 +1,4 @@
-# ChuckNorris-Jokes
+# ChuckNorris-Jokes (PHP)
 # Lorenzo Cruccu
 PHP-based, this site will show you how fun is Chuck Norris :)
 
