@@ -31,13 +31,13 @@
 	include("Utilities.php"); // Boostrap 4
 	//This page shows the output of the previous query
 	$jokeNumber = $_GET["id"];
-    $json=file_get_contents("http://api.icndb.com/jokes/".$jokeNumber);
+   	$json=file_get_contents("http://api.icndb.com/jokes/".$jokeNumber);
 	$joke=json_decode($json);
-	$sentence= $joke->value->joke;
+	$sentence= $joke->value->joke; //sentence is the string that contains the joke
 
 	echo "<div class=\"container\">";
 	
-    echo " <blockquote class=\"blockquote\">";
+  	echo " <blockquote class=\"blockquote\">";
 	echo " <h1 class=\"display-4\"> $sentence.</h1>";
   	echo " <footer class=\"blockquote-footer\">Chuck Norris</footer>";
 	echo " </blockquote>";
